@@ -1,0 +1,18 @@
+{
+    "name": "com.toxicaliengf.mode-machine.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f19b0224914da094d97a478d77378726"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

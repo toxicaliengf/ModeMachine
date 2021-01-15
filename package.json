@@ -1,0 +1,12 @@
+{
+"name": "com.toxicaliengf.mode-machine",
+"version": "0.1.0",
+"displayName": "Mode Machine",
+"description": "A pushdown state machine for monobehaviours.",
+"unity": "2018.1",
+"author":
+	{
+		"name": "Isobel Shasha",
+		"email": "isobel@sundaemonth.com"
+	}
+}
