@@ -1,8 +1,8 @@
 {
 "name": "com.toxicaliengf.mode-machine",
-"version": "0.1.0",
+"version": "0.1.0.1",
 "displayName": "Mode Machine",
-"description": "A pushdown state machine for monobehaviours.",
+"description": "A pushdown state machine for monobehaviours. TEST",
 "unity": "2018.1",
 "author":
 	{
