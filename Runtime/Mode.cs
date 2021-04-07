@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//test comment
 namespace ModeMachine
 {
     public abstract class Mode : MonoBehaviour
