@@ -9,8 +9,16 @@ namespace ModeMachine_Editor
     {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            ModeStack stack = fieldInfo.GetValue(property.serializedObject.targetObject) as ModeStack;
-            DrawStackInspector(stack, position, property, label);
+            object p = SerializeableExtensions.GetParent(property);
+            if (p is IModeStack)
+            { 
+                ModeStack stack = fieldInfo.GetValue(property.serializedObject.targetObject) as ModeStack;
+                ModeStack m = (p as IModeStack).ModeStack;
+
+                if(stack == m)
+                    DrawStackInspector(stack, position, property, label);
+            }
+
         }
 
 
