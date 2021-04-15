@@ -47,11 +47,6 @@ namespace ModeMachine_Editor
                 result = " " + parentObject.name;
             }
 
-            //draw a divider
-            Rect r = EditorGUILayout.GetControlRect();
-            r.y += r.height / 1.75f;
-            ModeStackEditor.DrawDivider(r);
-
             //draw prefix
             Rect clickArea = EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PrefixLabel("Parent Stack:");

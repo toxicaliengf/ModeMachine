@@ -28,13 +28,6 @@ namespace ModeMachine_Editor
 
         void DrawStackInspector(ModeStack targetStack, Rect position, SerializedProperty property, GUIContent label)
         {
-            //draw a nice lil horizontal divider
-            if(expandStackDrawer)
-            {
-                DrawDivider(position);
-                GUILayout.Space(8);
-                position.y += 8;
-            }
             int startingIndent = EditorGUI.indentLevel;
 
             //draw a foldout to contain a list of all the modes on the stack
@@ -90,20 +83,8 @@ namespace ModeMachine_Editor
                     }
                 }
             }
-            //draw a horizontal divider
             EditorGUI.indentLevel = startingIndent;
-            if(expandStackDrawer)
-                DrawDivider(EditorGUILayout.GetControlRect());
         }
 
-        public static void DrawDivider(Rect controlRect)
-        {
-            controlRect.y += 2;
-            controlRect.height = 3;
-            EditorGUI.DrawRect(controlRect, new Color(38 / 255f, 1f, 194/255f, .1f));
-            controlRect.y += 2;
-            controlRect.height = 1;
-            EditorGUI.DrawRect(controlRect, new Color(150 / 255f, 1f, 38 / 255f, .05f));
-        }
     }
 }
